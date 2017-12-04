@@ -1,0 +1,9 @@
+target/
+.idea/
+hconfig.iml
+hconfigserver/target/
+hconfigclient/target/
+hconfigserver/hconfigserver.iml
+hconfigclient/hconfigclient.iml
+src/main/resource/config/
+src/main/resource/config*
