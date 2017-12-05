@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class demoApplication {
-
+public class entryApplication {
     public static void main(String[] args) {
-        SpringApplication.run(demoApplication.class, args);
+        SpringApplication.run(entryApplication.class, args);
     }
 
     @Value("${test}")
@@ -19,5 +18,9 @@ public class demoApplication {
     @RequestMapping(value = "/hi")
     public String hi(){
         return foo;
+    }
+    @RequestMapping(value = "/")
+    public String hello(){
+        return "hello world";
     }
 }
