@@ -7,3 +7,6 @@ hconfigserver/hconfigserver.iml
 hconfigclient/hconfigclient.iml
 src/main/resource/config/
 src/main/resource/config*
+
+cloudeureka/target/
+cloudeureka/cloudeureka.iml
