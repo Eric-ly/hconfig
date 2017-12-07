@@ -11,21 +11,26 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <spring.version>4.2.3.RELEASE</spring.version>
-        <jackson.version>2.5.4</jackson.version>
-        <logback.version>1.1.3</logback.version>
-        <slf4j.version>1.7.7</slf4j.version>
+        <spring.version>4.2.9.RELEASE</spring.version>
+        <jstl.version>1.2</jstl.version>
+        <junit.version>4.11</junit.version>
+        <logback.version>1.0.13</logback.version>
+        <jcl-over-slf4j.version>1.7.5</jcl-over-slf4j.version>
+        <spring.cloud.version>1.2.0.RELEASE</spring.cloud.version>
     </properties>
+
 
     <dependencies>
 
+        <!--    junit 依赖    -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>${junit.version}</version>
             <!-- <scope>test</scope> -->
         </dependency>
 
+        <!--    spring mvc 的 依赖-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
@@ -44,9 +49,36 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+
+        <!--    spring cloud config client 依赖    -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-client</artifactId>
+            <version>${spring.cloud.version}</version>
+        </dependency>
+
+        <!--    logback -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${jcl-over-slf4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+
     </dependencies>
     <build>
-        <finalName>config-client</finalName>
+        <finalName>config-client-WSB</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
