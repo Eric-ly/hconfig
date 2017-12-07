@@ -5,8 +5,18 @@ hconfigserver/target/
 hconfigclient/target/
 hconfigserver/hconfigserver.iml
 hconfigclient/hconfigclient.iml
+hconfig-server.iml
+hconfig-client.iml
+
 src/main/resource/config/
 src/main/resource/config*
 
 cloudeureka/target/
 cloudeureka/cloudeureka.iml
+
+ConfigClientNoSpringBoot.iml
+ConfigClientNoSPringBoot/target/
+
+cloudeureka/cloud-eureka.iml
+
+hconfigclient/log.file

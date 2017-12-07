@@ -12,6 +12,7 @@
         <module>hconfigserver</module>
         <module>hconfigclient</module>
         <module>cloudeureka</module>
+        <module>ConfligClientNoSpringBoot</module>
     </modules>
 
 
