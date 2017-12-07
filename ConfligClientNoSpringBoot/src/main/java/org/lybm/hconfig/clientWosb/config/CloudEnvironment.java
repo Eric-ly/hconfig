@@ -1,4 +1,4 @@
-package org.lybm.hconfig.clientWosb.controller;
+package org.lybm.hconfig.clientWosb.config;
 
 import org.springframework.cloud.config.client.ConfigClientProperties;
 import org.springframework.cloud.config.client.ConfigServicePropertySourceLocator;
@@ -28,7 +28,8 @@ public class CloudEnvironment extends StandardServletEnvironment {
         ConfigClientProperties configClientProperties = new ConfigClientProperties(environment);
         configClientProperties.setUri("http://localhost:9001");
         configClientProperties.setName("config-client");
-        configClientProperties.setLabel("dev");
+        configClientProperties.setProfile("dev");
+        configClientProperties.setLabel("master");
 
         logger.debug("will load the client configuration-------"+configClientProperties);
 
