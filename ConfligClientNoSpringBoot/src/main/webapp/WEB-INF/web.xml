@@ -31,4 +31,11 @@
   	<url-pattern>/</url-pattern>
   </servlet-mapping>
 
+	<!-- 	添加自定义的ApplicationContext-->
+	<context-param>
+		<param-name>contextClass</param-name>
+		<param-value>org.lybm.hconfig.clientWosb.config.CustomWebApplicationContext</param-value>
+	</context-param>
+
+
 </web-app>
