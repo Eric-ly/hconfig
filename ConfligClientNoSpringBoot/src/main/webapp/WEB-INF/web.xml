@@ -37,5 +37,10 @@
 		<param-value>org.lybm.hconfig.clientWosb.config.CustomWebApplicationContext</param-value>
 	</context-param>
 
+	<context-param>
+		<param-name>spring.application.name</param-name>
+		<param-value>config-client</param-value>
+	</context-param>
+
 
 </web-app>
