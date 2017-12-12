@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class ConfigController {
 
-    @RequestMapping("/hello")
+    @RequestMapping("/test")
     @ResponseBody
     public String cloudDemo(){
         return "hello ";
